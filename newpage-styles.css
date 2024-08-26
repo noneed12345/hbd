@@ -1,0 +1,61 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4cbbc;
+    overflow: hidden;
+}
+
+.birthday {
+    position: absolute;
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 3s ease-in-out forwards; /* Fade-in effect */
+}
+img{
+    height: 500px;
+    width: 500px;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        opacity: 1; /* Fully opaque */
+    }
+}
+/* Flexbox container for options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.option-button {
+    background-color: #bf7667;
+    color: #eeebe6;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    .options {
+        flex-direction: column;
+    }
+
+    .option-button {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
