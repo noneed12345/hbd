@@ -5,7 +5,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f68282;
+    background-color: #f7a3a3;
     cursor: url('cursor1.png'), auto; /* Set custom cursor */
 }
 
